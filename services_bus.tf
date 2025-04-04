@@ -4,10 +4,10 @@ resource "azurerm_servicebus_namespace" "sbnamespace" {
   location  = var.location
   resource_group_name = azurerm_resource_group.rgproyecto.name
   sku = "Standard"
-  tags= var.tags  # ✅ tags SÍ está permitido en Namespace
+  tags= var.tags  
 }
 
-# Creación de la cola en el Service Bus (versión actualizada)
+# Creación de la cola en el Service Bus 
 resource "azurerm_servicebus_queue" "sbqueue" {
   name         = var.queue_name
   namespace_id = azurerm_servicebus_namespace.sbnamespace.id
