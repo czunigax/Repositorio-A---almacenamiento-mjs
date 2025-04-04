@@ -1,0 +1,56 @@
+{
+  "version": 4,
+  "terraform_version": "1.11.2",
+  "serial": 19,
+  "lineage": "db3afdcf-6e6e-9a7a-c5a4-a2add7031f24",
+  "outputs": {
+    "resource_group_name": {
+      "value": "rgp-proyecto1-dev",
+      "type": "string"
+    },
+    "servicebus_namespace_name": {
+      "value": "sbnamespace-proyecto1-dev",
+      "type": "string"
+    },
+    "servicebus_queue_name": {
+      "value": "procesos",
+      "type": "string"
+    },
+    "storage_account_name": {
+      "value": "stproyecto1devproyecto",
+      "type": "string"
+    },
+    "storage_account_primary_web_endpoint": {
+      "value": "https://stexpertosdevproyecto.z19.web.core.windows.net/",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "rgproyecto",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/2110a7ae-8ef4-4d89-a82a-f810563512aa/resourceGroups/rg-expertos-dev",
+            "location": "centralus",
+            "managed_by": "",
+            "name": "rg-expertos-dev",
+            "tags": {
+              "createdBy": "Cris",
+              "date": "2025-13-03",
+              "environment": "produccion"
+            },
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIwIn0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
